@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel ="stylesheet" href="home.css">
+</head>
+<body>
+     <h2>meowzic</h2>
+    <nav> 
+        <button>account</button>
+        <button>about</button>
+        <button>
+            <a href="login.html" class="logout">log out</a>
+        </button>
+    </nav>
+    
+    <h3>make your playlist</h3>
+
+  <img src="./images/4350.jpg.jxl" alt="cat singing with microphone">
+
+<form id="playlistForm">
+    <input type="text" id="songInput" placeholder="Enter song name">
+    <input type="submit" value="Add Song">
+</form>
+
+<ul id="playlist"></ul>
+
+<script>
+    const form = document.getElementById("playlistForm");
+    const input = document.getElementById("songInput");
+    const list = document.getElementById("playlist");
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const song = input.value;
+
+        if (song !== "") {
+            const li = document.createElement("li");
+            li.textContent = song;
+            list.appendChild(li);
+            input.value = "";
+        }
+    });
+</script>
+
+</body>
+</html>

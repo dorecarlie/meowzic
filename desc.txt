@@ -1,0 +1,9 @@
+Meowzic is a webapplication that has users create customizable playlists based on songs from artists with punny cat names. 
+For example, lady gaga would be lady paw paw and katy perry would be katy purry. 
+This app's goal is to make organzing your song playlists easily for cats to enjoy the sound of music.
+The intended user would be for cats, cat owners, or people fond of cats.
+With this app, users can create their own personal cat account with a username, icon and password and login to their personalized music library.
+Once logged in, users will click a '+' sign to create a playlist, and they can add songs through a catalog onto that playlist.
+The users can also edit the playlist name and icon, and everytime a new song is added, the playlist will update.
+
+Future implemations: users can have joint playlists which eachother and add friends through the app
